@@ -1,6 +1,6 @@
 # 📊 Airbnb Analysis in Boston
 
-This project investigates how the rise of Airbnb has influenced the tourist scene in the city of Boston. It uses a real database obtained from Airbnb (`bnb.db`) that includes information about listings, reviews, and availability.
+In this project I used data to create different views in SQL. The database have data related to the rise of Airbnb and its influence on the tourist scene in the city of Boston. It uses a real database obtained from Airbnb (`bnb.db`) that includes information about listings, reviews, and availability.
 
 ## 📁 Contents
 
@@ -18,6 +18,12 @@ This repository contains several SQL files that create useful views to understan
 - The database file `bnb.db`
 
 ## 📦 Database
+
+The `bnb.db` database is not included in this repository due to its size.
+
+You can download it from the following link:
+
+🔗 [Download bnb.db from Google Drive](https://drive.google.com/file/d/1kB3Riw-5Y7YhFQjP2eSkiNTas1atyUaj/view?usp=sharing)
 
 The `bnb.db` database is in a zip file you will have to unzip before use it.
 
