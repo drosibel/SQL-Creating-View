@@ -1,42 +1,41 @@
-# Análisis de AirBnB en la ciudad de Boston 🏙️
+# 📊 Airbnb Analysis in Boston
 
-Este proyecto contiene una serie de vistas SQL creadas a partir de una base de datos real extraída de AirBnB (`bnb.db`), con el objetivo de analizar cómo ha influido la plataforma en la escena turística de la ciudad de Boston.
+This project investigates how the rise of Airbnb has influenced the tourist scene in the city of Boston. It uses a real database obtained from Airbnb (`bnb.db`) that includes information about listings, reviews, and availability.
 
-## 📂 Contenido del repositorio
+## 📁 Contents
 
-- `no_descriptions.sql`  
-  Vista que muestra todos los listings excluyendo la columna de descripción.
+This repository contains several SQL files that create useful views to understand Airbnb activity:
 
-- `one_bedrooms.sql`  
-  Vista que selecciona todas las propiedades que tienen exactamente un dormitorio.
+- `no_descriptions.sql`: creates a view with all listings, excluding the description.
+- `one_bedrooms.sql`: shows listings that have exactly one bedroom.
+- `available.sql`: lists available dates for all listings.
+- `frequently_reviewed.sql`: presents the 100 most frequently reviewed listings.
+- `june_vacancies.sql`: shows how many days in June 2023 each listing was available.
 
-- `available.sql`  
-  Vista que muestra todas las fechas disponibles en todas las propiedades, incluyendo tipo de propiedad y nombre del host.
+## 🧠 Requirements
 
-- `frequently_reviewed.sql`  
-  Vista que presenta los 100 listings más frecuentemente reseñados, ordenados de mayor a menor cantidad de reseñas.
+- SQLite3
+- The database file `bnb.db`
 
-- `june_vacancies.sql`  
-  Vista que muestra para cada propiedad cuántos días de junio de 2023 estuvo disponible para reservas.
+## 📦 Database
 
-## 🧠 Objetivo
+The `bnb.db` database is in a zip file you will have to unzip before use it.
 
-Este conjunto de vistas permite responder preguntas como:
+## 🚀 Usage
 
-- ¿Qué tipo de propiedades son más comunes en Boston?
-- ¿Qué listings tienen mayor demanda (mayor cantidad de reseñas)?
-- ¿Cuáles estuvieron más disponibles durante el verano?
-- ¿Cómo varía la oferta de AirBnB según el tipo de propiedad o el host?
+To execute a view, use the following command in SQLite:
 
-## 🚀 Cómo usar este repositorio
+```bash
+sqlite3 bnb.db < filename.sql
+```
 
-1. Abre la base de datos bnb.db en SQLite (o SQLite Browser).
-2. Ejecuta los scripts .sql para crear las vistas deseadas.
+For example:
+```
+sqlite3 bnb.db < frequently_reviewed.sql
+```
+This will create a view called frequently_reviewed inside the database.
 
-## 🛠 Requisitos
+## 🧑‍💻 Author
+Name: Rosibel Ramirez
+GitHub: https://github.com/drosibel
 
-- SQLite 3.x
-- Un visualizador o cliente SQL (por ejemplo: DB Browser for SQLite, DBeaver, etc.)
-
-## 📝 Autor
-Este proyecto fue desarrollado como parte de una práctica de análisis de datos sobre el impacto de AirBnB en Boston.
